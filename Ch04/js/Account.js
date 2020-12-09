@@ -1,0 +1,24 @@
+function Account(bank, id, name, money){
+
+    this.bank =  bank;
+    this.id = id;
+    this.name = name;
+    this.money = money;
+    
+    
+        this.deposit = function(_money){
+        this.money += _money;
+    }
+    this.withdraw = function(_money){
+        this.monwt -=_money;
+    }
+
+    this.show = function(){
+        document.write(`--------------<br />`);
+        document.write(`은행명 : `+this.bank+`<br />`);
+        document.write(`계좌번호`+this.id+`<br />`);
+        document.write(`입금주`+this.name+`<br />`);
+        document.write(`현재잔액`+this.monwy+`<br />`);
+        document.write(`--------------<br />`);
+    }
+}
